@@ -22,8 +22,8 @@
     font-family: monospace;
 }
 
-.item item-image{
-    align-items: flex-end;
+.item-image{
+    text-align: center;
 }
 
 .item-image-size{
@@ -31,9 +31,13 @@
     height: 150px;
 }
 
+.item-body{}
+
 .item-title{
     color: #88C425;
 }
+
+.item-text{}
 
 @media screen and (max-width: 992px) {
     .item {
