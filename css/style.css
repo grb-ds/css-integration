@@ -14,6 +14,7 @@
 
 .container-column{
     align-content: center;
+
 }
 
 .container-row{
@@ -42,22 +43,20 @@
     flex: 1 0 calc(25% - 10px);
 }
 
-.item-row{
+.item-row {
     flex: 0 0 calc(45% - 10px);
-    display:flex;
+    display: flex;
     align-items: stretch;
     max-width: 800px;
     border: 1px solid #AAB3AB;
-}
-
-.item-image-column{
-    text-align: center;
+    flex-wrap: wrap;
 }
 
 .item-image-row {
-    display:inline-flex;
+    display:flex;
     flex: 0 1 calc(45% - 10px);
     margin: 0 0;
+    /*flex:1;*/
 
 }
 
@@ -94,9 +93,10 @@
 
 .item-body-column{
     padding: 10px 30px;
-    flex:1;
+    /*flex:1;*/
     display: flex;
     flex-direction: column;
+    flex: 0 1 calc(45% - 10px);
 
 }
 
@@ -150,6 +150,84 @@
     align-self: flex-end;
 }
 
+
+
+/*************/
+.container-pixel{
+    width: 400px;
+    height: 660px;
+}
+
+.item-chart-title{
+    display: flex;
+    border-bottom: 1px solid white;
+}
+
+.container-style-chart{
+   /* background-color: #005cbf;*/
+    background-color: #448cf4;
+    color: white;
+    font-family: "Arial Narrow";
+    font-size: medium;
+}
+.chart-bar {
+    width: 10px;
+    background-color: white;
+    border: 1px solid white;
+    margin-right: 1px;
+}
+.chart-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: stretch;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    font-size: 18px;
+    text-decoration: none;
+    border-collapse: collapse;
+}
+
+.align-left{
+    text-align: left;
+}
+.align-right{
+    text-align: right;
+}
+
+tbody tr {
+    border-top: 1px solid white;
+    margin: 0.5rem;
+}
+
+td
+{
+    height:40px;
+}
+
+.item-footer-style{
+    margin-top: 25px;
+    border-top: 1px solid white;
+    font-size: 20px;
+}
+
+/*.item-body-container{
+    display: flex;
+    display:
+}*/
+
+.h1-xxl{
+    font-size: 3rem;
+}
+
+.font-title-chart{
+    font-size: 16px;
+}
+
+
 @media screen and (max-width: 992px) {
     .item-column {
         flex: 1 0 calc(50% - 10px);
@@ -164,6 +242,7 @@
     .container {
         flex-direction: column;
     }
+
 }
 
 /* Index Menu */
